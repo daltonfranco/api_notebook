@@ -1,0 +1,10 @@
+[
+    {
+        "Dell": "http://localhost:5000/api/marcas/dell",
+        "Lenovo": "http://localhost:5000/api/marcas/lenovo",
+        "Acer": "http://localhost:5000/api/marcas/acer",
+        "Vaio": "http://localhost:5000/api/marcas/vaio",
+        "Samsung": "http://localhost:5000/api/marcas/samsung",
+        "Apple": "http://localhost:5000/api/marcas/apple"
+    }
+]
