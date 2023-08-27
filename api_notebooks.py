@@ -238,6 +238,12 @@ notebooks = [
     }
 ]
 
+@app.route('/api/notebooks/<int:id>',methods=['GET'])
+def obter_notebook(id):
+    for notebook in notebooks:
+        if notebook.get('id') == id:
+            return jsonify(notebook)
+
 @app.route('/',methods=['GET'])
 def home_page():
     return "API para indicação de notebooks para os determinados setores de uma empresa"
