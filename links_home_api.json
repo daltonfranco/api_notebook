@@ -1,7 +1,0 @@
-[
-    {
-        "notebook": "http://localhost:5000/api/notebooks",
-        "marcas": "http://localhost:5000/api/marcas",
-        "setores": "http://localhost:5000/api/setores"
-    }
-]
