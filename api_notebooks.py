@@ -125,5 +125,13 @@ def alterarNotebook(id):
     novo_valor = alterar_notebook
     mongoApiNotebooks.collection_notebooks.update_many(filtro, {"$set": novo_valor})
     return "ok"
+    
+@app.route('/rota-existente')
+def rota_existente():
+    return 'Esta é uma rota existente'
+
+@app.errorhandler(404)
+def pagina_nao_encontrada(error):
+    return send_file('potato.jpeg'), 404
 
 app.run(port=5000, host='localhost', debug=True)
